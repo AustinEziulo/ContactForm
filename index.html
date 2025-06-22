@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Austin's Workspace Contact Form</title>
+</head>
+<body>
+  <h2>Austin's Workspace Contact Form</h2>
+  <p>Please kindly fill out this form</p> <br>
+  <form action="https://formsubmit.co/aeziulo@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="fullName" required><br><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="emailAddress" required><br><br>
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
+    <label for="age" required>Enter Your Age:</label><br>
+    <input type="radio" id="age" name="age" value="8-20 years">8-20 years <br>
+    <input type="radio" id="age" name="age" value="21-40 years">21-40 years <br>
+    <input type="radio" id="age" name="age" value="41-60 years">41-60 years <br>
+    <input type="radio" id="age" name="age" value="other years">other years <br><br>
+    <label for="wears">Pick Your Preferred Wear(s):</label> <br>
+    <input type="checkbox" id="wears" name="wears" value="senatorWear">Senator Wear <br>
+    <input type="checkbox" id="wears" name="wears" value="cooperateWear">Cooperate Wear <br>
+    <input type="checkbox" id="wears" name="wears" value="ankaraWear">Ankara Wear <br>
+    <input type="checkbox" id="wears" name="wears" value="vintageWear">Vintage Wear <br>
+    <input type="checkbox" id="wears" name="wears" value="casualWear">Casual Wear <br><br>
+    <label for="pickupTime">Pickup Time:</label> <br>
+    <select id="pickupTime" name="pickupTime">
+      <option value="">Select Your Pickup Time</option>
+      <option value="oneWeekTime">One Week Time</option>
+      <option value="twoWeeksTime">Two Weeks Time</option>
+      <option value="oneMonthTime">One Month Time</option>
+      <option value="twoMonthsTime">Two Months Time</option>
+      <option value="notToSay">Prefer Not To Say</option>
+    </select> <br><br>
+    <label for="comment">Write Your Message Here:</label> <br>
+    <textarea name="comment" id="comment" rows="10" cols="30" placeholder="Write Here..."></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
